@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // Initialize Firebase
 var config = {
     apiKey: "AIzaSyD_7Wg45B52ObBgEemV4cF5_ikfQxzCvRE",
@@ -81,4 +82,5 @@ database.ref().on("child_added", function(childSnapshot, preChildKey) {
 
     $("#train-table > tbody").append("<tr><td>" + fbTrnName + "</td><td>" + fbTrnDestination + "</td><td>" + fbFrequency + "</td><td>" + nextTrainConverted + "</td><td>" + minsAway + "</td><td>");
 
+});
 });
